@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
 use App\Models\product;
 
 class CartController extends Controller
@@ -59,7 +60,10 @@ class CartController extends Controller
      */
     public function edit($id)
     {
+        $data['categories'] = Category::all();
+        $data['product'] = Product::find($id);
         
+        return view('product/edit', $data);
     }
 
     /**
