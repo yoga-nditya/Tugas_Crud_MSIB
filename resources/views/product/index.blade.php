@@ -18,6 +18,9 @@
             <a href="/product/{{ $item->id }}/delete">
               <button class="btn btn-danger mt-2" type="button">Hapus</button>
             </a>
+            <a href="/product/cart">
+              <button class="btn btn-primary mt-2" type="button">Tambahkan Ke Keranjang</button>
+            </a>
         </div>
     </div>
   @endforeach   

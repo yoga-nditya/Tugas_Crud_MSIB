@@ -24,4 +24,5 @@ Route::get('/product/{id}/delete',[\App\Http\Controllers\ProductController::clas
 
 Route::post('/product', [\App\Http\Controllers\ProductController::class, 'store']);
 Route::put('/product/{id}',[\App\Http\Controllers\ProductController::class, 'update']);
+Route::get('/product/cart',[\App\Http\Controllers\CartController::class,'index']);
 
