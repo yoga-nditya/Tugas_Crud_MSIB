@@ -14,9 +14,9 @@ class CartController extends Controller
      */
     public function index()
     {
-        $data['products'] = Product::all();
+        $cart['products'] = Product::all();
 
-        return view('product/cart', $data);
+        return view('product/cart', $cart);
     }
 
     /**
@@ -59,7 +59,7 @@ class CartController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
